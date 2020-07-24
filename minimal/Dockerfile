@@ -26,7 +26,7 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
     texlive-fonts-recommended \
     texlive-plain-generic \
     # Optional dependency
-    texlive-fonts-extra \
+    #texlive-fonts-extra \
     # ----
     tzdata \
     unzip \
