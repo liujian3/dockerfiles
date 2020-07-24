@@ -20,9 +20,9 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
     netcat \
     python-dev \
     # ---- nbconvert dependencies ----
-    texlive-xetex \
-    texlive-fonts-recommended \
-    texlive-plain-generic \
+    #texlive-xetex \
+    #texlive-fonts-recommended \
+    #texlive-plain-generic \
     # Optional dependency
     #texlive-fonts-extra \
     # ----
