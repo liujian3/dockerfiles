@@ -3,8 +3,6 @@
 ARG BASE_CONTAINER=liujian3lj7/minimal-notebook-small
 FROM $BASE_CONTAINER
 
-LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
-
 USER root
 
 # R pre-requisites
