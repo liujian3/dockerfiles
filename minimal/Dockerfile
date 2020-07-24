@@ -3,8 +3,6 @@
 ARG BASE_CONTAINER=jupyter/base-notebook
 FROM $BASE_CONTAINER
 
-LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
-
 USER root
 
 # Install all OS dependencies for fully functional notebook server
