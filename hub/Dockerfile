@@ -2,9 +2,7 @@ FROM jupyterhub/jupyterhub
 
 USER root
 
-RUN pip install --upgrade pip \
- && pip install jupyterhub-ldapauthenticator
- && pip install dockerspawner
- && pip install jupyterhub-systemdspawner
+RUN python3 -m pip install --upgrade setuptools pip wheel
+RUN python3 -m pip install jupyterhub-ldapauthenticator dockerspawner jupyterhub-systemdspawner
 
 USER $NB_UID
