@@ -1,3 +1,5 @@
+#c.JupyterHub.authenticator_class = 'dummyauthenticator.DummyAuthenticator'
+
 c.JupyterHub.authenticator_class = 'ldapauthenticator.LDAPAuthenticator'
 c.LDAPAuthenticator.server_address = 'x.x.x.x'
 
