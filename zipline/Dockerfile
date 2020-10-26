@@ -9,7 +9,7 @@ RUN apt-get install gcc g++
 RUN apt-get clean
 RUN pip install --no-cache pip==9.0.1
 RUN pip install --no-cache --upgrade setuptools pip wheel
-RUN pip install --no-cache zipline TA-Lib alphalens pyfolio
+RUN pip install --no-cache zipline alphalens pyfolio
 # Add permanent pip/conda installs here
 # e.g., RUN conda install -f -y -q -c conda-forge dask=2.6.0
 
