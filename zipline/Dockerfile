@@ -4,13 +4,13 @@ USER jovyan
 
 # Using pip install instead of conda since zipline has conda version issues, see:
 # https://github.com/quantopian/zipline/issues/2514
-
+RUN apt-get update 
+RUN apt-get install gcc g++
+RUN apt-get clean
 RUN python3 -m pip install --no-cache --upgrade setuptools pip wheel
 RUN python3 -m pip install --no-cache zipline TA-Lib alphalens pyfolio
 # Add permanent pip/conda installs here
 # e.g., RUN conda install -f -y -q -c conda-forge dask=2.6.0
-
-
 
 USER root
 
