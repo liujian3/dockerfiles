@@ -7,11 +7,11 @@ RUN apt-get clean
 WORKDIR /usr/share
 RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
 RUN tar -xzf ta-lib-0.4.0-src.tar.gz
+RUN rm -f ta-lib-0.4.0-src.tar.gz
 WORKDIR /usr/share/ta-lib
 RUN ./configure --prefix=/usr
 RUN make
 RUN make install
-RUN rm -f ../ta-lib-0.4.0-src.tar.gz
 
 USER $NB_UID
 # Using pip install instead of conda since zipline has conda version issues, see:
