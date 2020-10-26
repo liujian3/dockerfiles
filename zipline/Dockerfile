@@ -7,6 +7,7 @@ USER jovyan
 RUN apt-get update 
 RUN apt-get install gcc g++
 RUN apt-get clean
+RUN pip install pip==9.0.1
 RUN python3 -m pip install --no-cache --upgrade setuptools pip wheel
 RUN python3 -m pip install --no-cache zipline TA-Lib alphalens pyfolio
 # Add permanent pip/conda installs here
