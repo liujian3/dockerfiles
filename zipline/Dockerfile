@@ -25,5 +25,5 @@ RUN pip install --no-cache TA-Lib
 
 # Add permanent apt-get installs and other root commands here
 # e.g., RUN apt-get install npm nodejs
-
 RUN conda clean --all -y
+WORKDIR /home/$NB_USER
