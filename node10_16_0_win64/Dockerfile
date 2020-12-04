@@ -1,5 +1,6 @@
 FROM node:10.16.0
-ENV ADDR=127.0.0.1:8081
+ARG ADDRX=127.0.0.1:8081
+ENV ADDR=$ADDRX
 RUN npm config set user-agent "npm/6.9.0 node/v10.16.0 win32 x64"
 RUN npm config set registry http://${ADDR}/repository/npm-proxy/
 RUN npm install yarn -g
