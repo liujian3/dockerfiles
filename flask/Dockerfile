@@ -1,4 +1,4 @@
-FROM python:3.8
+FROM python:3.9
 RUN pip install --no-cache flask uwsgi
 COPY src /src
 EXPOSE 5000
