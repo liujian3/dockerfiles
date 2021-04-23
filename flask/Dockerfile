@@ -3,4 +3,4 @@ RUN pip install --no-cache flask gunicorn
 COPY src /src
 EXPOSE 5000
 WORKDIR /src
-ENTRYPOINT ["gunicorn", "-w", "4"]
+ENTRYPOINT ["gunicorn", "-c", "gunicorn_conf.py", "main:app"]
