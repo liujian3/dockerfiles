@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM python:slim
 RUN pip install --no-cache flask gunicorn 
 COPY src /src
 EXPOSE 5000
