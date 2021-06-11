@@ -7,7 +7,7 @@ LABEL maintainer="Sebastian Ramirez <tiangolo@gmail.com>"
 RUN pip install --no-cache-dir "uvicorn[standard]" gunicorn pandas ldap3 fastapi cx_Oracle authlib asyncpg aioredis redis requests sqlalchemy aiofiles httpx itsdangerous jinja2
 
 COPY ./start.sh /start.sh
-COPY ./ljpath.pth /usr/local/lib/python$version/site-packages/start.sh
+COPY ./ljpath.pth /usr/local/lib/python$version/site-packages/ljpath.pth
 RUN chmod +x /start.sh
 
 COPY ./gunicorn_conf.py /gunicorn_conf.py
