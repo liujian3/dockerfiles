@@ -1,11 +1,13 @@
   
-FROM python:slim
+ARG version=3.9
+FROM python:$version-slim
 
 LABEL maintainer="Sebastian Ramirez <tiangolo@gmail.com>"
 
 RUN pip install --no-cache-dir "uvicorn[standard]" gunicorn pandas ldap3 fastapi cx_Oracle authlib asyncpg aioredis redis requests sqlalchemy
 
 COPY ./start.sh /start.sh
+COPY ./ljpath.pth /usr/local/lib/python$version/site-packages/start.sh
 RUN chmod +x /start.sh
 
 COPY ./gunicorn_conf.py /gunicorn_conf.py
