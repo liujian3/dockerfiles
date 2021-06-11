@@ -1,5 +1,5 @@
   
-FROM python:3.8-slim
+FROM python:slim
 
 LABEL maintainer="Sebastian Ramirez <tiangolo@gmail.com>"
 
