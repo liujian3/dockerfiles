@@ -2,7 +2,9 @@ from node
 
 ENV ACCEPT_HIGHCHARTS_LICENSE="YES"
 RUN npm install highcharts-export-server -g 
-
+RUN apt-get update && apt-get install -yq --no-install-recommends \
+    inkscape
+    
 WORKDIR /
 
 EXPOSE 8080
