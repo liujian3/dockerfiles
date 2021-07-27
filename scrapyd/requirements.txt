@@ -1,2 +1,0 @@
-scrapyd
-scrapyd-client
