@@ -4,7 +4,7 @@ FROM python:$PYTHON_VERSION-slim
 
 LABEL maintainer="Sebastian Ramirez <tiangolo@gmail.com>"
 
-RUN pip install --no-cache-dir "uvicorn[standard]" gunicorn pandas ldap3 fastapi cx_Oracle authlib asyncpg aioredis redis requests sqlalchemy aiofiles httpx itsdangerous jinja2 xlrd openpyxl
+RUN pip install --no-cache-dir "uvicorn[standard]" gunicorn pandas ldap3 fastapi cx_Oracle authlib asyncpg aioredis redis requests sqlalchemy aiofiles httpx itsdangerous jinja2 xlrd openpyxl pymysql
 
 COPY ./start.sh /start.sh
 COPY ./ljpath.pth /usr/local/lib/python$PYTHON_VERSION/site-packages/ljpath.pth
