@@ -1,4 +1,4 @@
-ROM rstudio/r-base:4.1-centos8
+FROM rstudio/r-base:4.1-centos8
 
 RUN yum install wget initscripts compat-openssl10 -y
 
