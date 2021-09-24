@@ -1,6 +1,6 @@
 FROM rstudio/r-base:4.1-centos8
 
-RUN yum install wget initscripts compat-openssl10 -y
+RUN yum install wget initscripts compat-openssl10 passwd -y
 
 RUN wget https://download2.rstudio.org/rstudio-server-rhel-1.1.463-x86_64.rpm
 
