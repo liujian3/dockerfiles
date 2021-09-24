@@ -6,7 +6,7 @@ RUN wget https://download2.rstudio.org/rstudio-server-rhel-1.1.463-x86_64.rpm
 
 RUN yum install rstudio-server-rhel-1.1.463-x86_64.rpm -y
 
-RUN yum clean
+RUN yum clean packages
 
 RUN rm -f rstudio-server-rhel-1.1.463-x86_64.rpm
 
