@@ -18,14 +18,14 @@ RUN apt-get update --yes && \
     unzip \
     vim-tiny \
     # git-over-ssh
-    openssh-client \
+    openssh-client && \
     # TODO: check if these are needed and describe
     #inkscape \
-    libsm6 \
-    libxext-dev \
-    libxrender1 \
-    lmodern \
-    netcat \
+    #libsm6 \
+    #libxext-dev \
+    #libxrender1 \
+    #lmodern \
+    #netcat \
     # nbconvert dependencies
     # https://nbconvert.readthedocs.io/en/latest/install.html#installing-tex
     #texlive-xetex \
