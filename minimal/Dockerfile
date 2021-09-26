@@ -20,7 +20,7 @@ RUN apt-get update --yes && \
     # git-over-ssh
     openssh-client \
     # TODO: check if these are needed and describe
-    inkscape \
+    #inkscape \
     libsm6 \
     libxext-dev \
     libxrender1 \
