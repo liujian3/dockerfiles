@@ -40,6 +40,7 @@ RUN mamba install --quiet --yes \
     'r-rodbc' \
     'r-rsqlite' \
     'r-shiny' \
+    'r-xlsx' \
     'unixodbc' && \
     mamba clean --all -f -y && \
     fix-permissions "${CONDA_DIR}" && \
